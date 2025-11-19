@@ -1,0 +1,21 @@
+.memory-root{
+  width:100%;
+  max-width:640px;
+  margin:12px auto;
+  padding:18px;
+  border-radius:14px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.04);
+  text-align:center;
+}
+.memory-meta{ display:flex; gap:16px; justify-content:center; align-items:center; margin-bottom:12px; color:var(--muted); font-weight:700; }
+.grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; padding:6px; }
+.card{ width:100%; padding-top:100%; position:relative; perspective:900px; border-radius:10px; border:none; cursor:pointer; }
+.card .card-inner{ position:absolute; inset:0; transition: transform 0.45s; transform-style:preserve-3d; }
+.card .card-front, .card .card-back{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; border-radius:10px; backface-visibility:hidden; font-size:28px; font-weight:700; }
+.card .card-front{ background: linear-gradient(180deg,#111827,#0b1220); color:var(--muted); box-shadow: 0 10px 30px rgba(2,6,23,0.6); }
+.card .card-back{ background: linear-gradient(90deg, rgba(124,58,237,0.18), rgba(6,182,212,0.12)); color:white; transform: rotateY(180deg); box-shadow: 0 10px 30px rgba(2,6,23,0.6); }
+.card.flipped .card-inner{ transform: rotateY(180deg); }
+.card.matched .card-back{ background: linear-gradient(90deg,#10b981,#7c3aed); box-shadow: 0 14px 40px rgba(2,6,23,0.6); }
+.grid.won .card .card-back{ transform:none; background: linear-gradient(90deg,#f59e0b,#a3e635); }
+.congrats{ margin-top:14px; font-weight:700; color:var(--text); }

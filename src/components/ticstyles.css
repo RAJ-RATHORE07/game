@@ -1,0 +1,52 @@
+:root { --card-w: 340px; --square: 86px; }
+
+.tic-container{
+  width:100%;
+  max-width:var(--card-w);
+  margin:12px auto;
+  border-radius:16px;
+  padding:18px;
+  text-align:center;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 12px 30px rgba(2,6,23,0.5);
+}
+.tic-container h2{ margin:0 0 6px 0; font-size:20px; color:var(--text); }
+.status{
+  margin:10px 0 14px;
+  color:rgba(255,255,255,0.85);
+  font-weight:600;
+  display:flex; justify-content:center; gap:10px; align-items:center;
+}
+
+/* board */
+.board{
+  display:grid;
+  grid-template-columns:repeat(3, var(--square));
+  gap:10px;
+  justify-content:center;
+  margin:8px auto 14px;
+}
+.square{
+  width:var(--square);
+  height:var(--square);
+  font-size:32px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.04);
+  background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.35);
+}
+.square:hover{ transform: translateY(-6px); box-shadow: 0 18px 40px rgba(2,6,23,0.45); }
+.square:active{ transform: translateY(-2px) scale(.995); }
+.square.filled{ background: linear-gradient(90deg,#ffffff06,#ffffff03); cursor:default; color:white; }
+
+/* controls */
+.controls{ display:flex; gap:10px; justify-content:center; margin-top:10px; }
+.btn { font-size:14px; }
+.hint{ margin-top:10px; color:rgba(255,255,255,0.65); font-size:13px; }

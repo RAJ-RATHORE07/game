@@ -1,0 +1,27 @@
+.rps-container{
+  width:100%;
+  max-width:360px;
+  margin:12px auto;
+  padding:16px;
+  border-radius:14px;
+  text-align:center;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.04);
+}
+.rps-header{ display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.mode-switch label{ color:var(--muted); font-size:13px; margin-right:8px; cursor:pointer; }
+.scoreboard{ display:flex; gap:12px; justify-content:center; font-weight:700; color:var(--muted); margin:10px 0; }
+.choices{ display:flex; gap:12px; justify-content:center; margin-top:10px; }
+.choice-btn{
+  padding:10px 16px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.06);
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  cursor:pointer;
+  font-weight:700;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.choice-btn:hover{ transform: translateY(-6px); box-shadow: 0 12px 30px rgba(2,6,23,0.45); }
+.result{ margin-top:12px; color:var(--muted); }
+.picked{ display:flex; gap:12px; justify-content:center; margin-top:8px; color:var(--text); font-weight:700; }
+.hint{ color:rgba(255,255,255,0.6); margin-top:8px; font-size:13px; }
