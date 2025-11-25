@@ -1,16 +1,47 @@
-# React + Vite
+A collection of classic mini-games built using React and powered by Vite for fast performance and smooth development experience.
+The interface features a clean dark UI with an intuitive game switcher.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 Live Demo:
+👉 https://thunderous-twilight-5094bf.netlify.app/
 
-Currently, two official plugins are available:
+🕹 Included Games
+Game	Description
+❌⭕ Tic Tac Toe	A strategic two-player classic.
+✊ ✋ ✌ Rock-Paper-Scissors	Play quick rounds against logic-based choices.
+🐍 Snake	Retro-style snake movement and food collection game.
+🧠 Memory Card Game	Flip and match cards to test your memory.
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Modern dark theme
 
-## React Compiler
+Smooth tab-switch UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Responsive layout
 
-## Expanding the ESLint configuration
+Simple and modular code structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Fun logic-based gameplay
+
+🚀 Getting Started
+
+Clone and run the project locally:
+
+git clone https://github.com/RAJ-RATHORE07/game.git
+cd game
+npm install
+npm run dev
+
+📦 Build for Production
+npm run build
+
+🧰 Tech Stack
+
+React
+
+Vite
+
+JavaScript (JSX)
+
+CSS
+
+ESLint
