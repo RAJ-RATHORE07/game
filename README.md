@@ -13,19 +13,14 @@ Game	Description
 ✨ Features
 
 Modern dark theme
-
 Smooth tab-switch UI
-
 Responsive layout
-
 Simple and modular code structure
-
 Fun logic-based gameplay
 
 🚀 Getting Started
 
 Clone and run the project locally:
-
 git clone https://github.com/RAJ-RATHORE07/game.git
 cd game
 npm install
@@ -35,13 +30,8 @@ npm run dev
 npm run build
 
 🧰 Tech Stack
-
 React
-
 Vite
-
 JavaScript (JSX)
-
 CSS
-
 ESLint
